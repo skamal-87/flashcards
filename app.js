@@ -10,7 +10,7 @@ app.get('/', (req,res) => {
 });
 
 app.get('/cards', (req,res) => {
-    res.render('card',{prompt: "Who is buried in Grant's Tomb?", colors});
+    res.render('card',{prompt: "Who is buried in Grant's Tomb?"});
 });
 
 app.listen(3000, () =>{
