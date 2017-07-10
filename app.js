@@ -2,9 +2,15 @@ const express = require('express');
 
 const app = express();
 
-app.get('/', (request,response) => {
-    response.send('ayy bb');
+app.get('/', (req,res) => {
+    res.send('<h1>I love Treehouse!</h1>');
 });
 
-app.listen(3000);
+app.get('/hello', (req,res) => {
+    res.send('<h1>Hello BOI!</h1>');
+});
+
+app.listen(3000, () =>{
+    console.log('The application is running on localhost:3000')
+});
 
