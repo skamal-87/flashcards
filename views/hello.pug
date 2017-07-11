@@ -1,8 +1,7 @@
-extends layout.pug
+extends layout
 
 block content
-    section#content
-        form(action='/hello',method='post')
-            label Please enter your name:
-                input(type='text',name='username')
-            button(type='submit') Submit
+    form(action='/hello', method='post')
+      label Please enter you name:
+        input(type='text', name='username')
+      button(type='submit') Submit
